@@ -124,8 +124,7 @@ def get_extras():
     return np.random.choice(
         ['Jalapenos',
          'Walnuts',
-         'Pinenuts',
-         'Watercress']
+         'Pinenuts']
     )
 
 
@@ -134,7 +133,7 @@ def create_tweet():
     veg = get_veg() + np.random.choice(['', ", {0}".format(get_veg())], p=[0.7, 0.3])
     dairy = np.random.choice([get_dairy(), ''], p=[0.7, 0.3])
     sauce = get_sauce()
-    extras = np.random.choice([get_extras(), ''], p=[0.3, 0.7])
+    extras = np.random.choice([get_extras(), ''], p=[0.2, 0.8])
     text = 'SotD - ' + meat + ', '
     if dairy != '':
         text += dairy + ', '

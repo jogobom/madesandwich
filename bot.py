@@ -129,12 +129,14 @@ def get_extras():
 
 
 def create_tweet():
-    meat = np.random.choice([get_meat(), get_seafood()], p=[0.7, 0.3])
+    meat = np.random.choice([get_meat(), get_seafood(), ''], p=[0.5, 0.3, 0.2])
     veg = get_veg() + np.random.choice(['', ", {0}".format(get_veg())], p=[0.7, 0.3])
     dairy = np.random.choice([get_dairy(), ''], p=[0.7, 0.3])
     sauce = get_sauce()
     extras = np.random.choice([get_extras(), ''], p=[0.2, 0.8])
-    text = 'SotD - ' + meat + ', '
+    text = 'S.O.T.D '
+    if meat != '':
+        text += meat + ', '
     if dairy != '':
         text += dairy + ', '
     text += veg + ', ' + sauce

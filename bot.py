@@ -128,15 +128,19 @@ def get_extras():
     )
 
 
+def get_non_filling():
+    return 'Hummus'
+
+
 def create_tweet():
-    meat = np.random.choice([get_meat(), get_seafood(), ''], p=[0.5, 0.3, 0.2])
-    veg = get_veg() + np.random.choice(['', ", {0}".format(get_veg())], p=[0.7, 0.3])
+    main_filling = np.random.choice([get_meat(), get_seafood(), get_non_filling(), ''], p=[0.51, 0.36, 0.05, 0.08])
+    veg = get_veg() + np.random.choice(['', ", {0}".format(get_veg())], p=[0.8, 0.2])
     dairy = np.random.choice([get_dairy(), ''], p=[0.7, 0.3])
     sauce = get_sauce()
     extras = np.random.choice([get_extras(), ''], p=[0.2, 0.8])
     text = 'S.O.T.D '
-    if meat != '':
-        text += meat + ', '
+    if main_filling != '':
+        text += main_filling + ', '
     if dairy != '':
         text += dairy + ', '
     text += veg + ', ' + sauce

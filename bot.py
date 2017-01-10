@@ -162,7 +162,7 @@ def create_tweet():
         text += dairy[0] + ', '
     text += veg1[0] + ', '
     if veg2[0] != '':
-        text += ', ' + veg2[0]
+        text += veg2[0] + ', '
     text += sauce[0]
     if extras[0] != '':
         text += ', ' + extras[0]

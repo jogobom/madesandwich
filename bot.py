@@ -153,7 +153,7 @@ def create_tweet():
     sauce = get_sauce()
 
     tmp_array = [get_extras(), ('', 0)]
-    extras = tmp_array[np.random.choice(len(tmp_array), p=[0.2, 0.8])]
+    extras = tmp_array[np.random.choice(len(tmp_array), p=[0.1, 0.9])]
 
     text = 'S.O.T.D '
     if main_filling[0] != '':

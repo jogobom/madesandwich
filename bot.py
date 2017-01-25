@@ -140,7 +140,7 @@ def get_non_filling():
 
 def create_tweet():
     tmp_array = [get_meat(), get_seafood(), get_non_filling(), ('', 0)]
-    main_filling = tmp_array[np.random.choice(len(tmp_array), p=[0.51, 0.36, 0.05, 0.08])]
+    main_filling = tmp_array[np.random.choice(len(tmp_array), p=[0.53, 0.37, 0.06, 0.04])]
 
     veg1 = get_veg()
 

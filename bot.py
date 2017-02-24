@@ -135,7 +135,10 @@ def get_extras():
 
 
 def get_non_filling():
-    return 'Houmous', 50
+    return choice(
+        [('Houmous', 50),
+         ('Onion bhaji', 60)]
+    )
 
 
 def create_tweet():

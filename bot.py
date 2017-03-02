@@ -30,6 +30,7 @@ def get_meat():
          ('Smoked Turkey', 70),
          ('Chicken', 70),
          ('Chicken Tikka', 70),
+         ('Turkey', 70),
          ('Parma Ham', 90)]
     )
 
@@ -81,6 +82,7 @@ def get_veg():
          ('Grapes', 30),
          ('Apple', 30),
          ('Banana', 30),
+         ('Buttered Leaks', 30),
          ('Pease Pudding', 40),
          ('Stuffing', 50),
          ('Raw Peppers', 40),
@@ -128,7 +130,8 @@ def get_sauce():
 
 def get_extras():
     return choice(
-        [('Jalapenos', 30),
+        [('Toasted Sesame Seeds', 10),
+         ('Jalapenos', 30),
          ('Walnuts', 40),
          ('Pinenuts', 50)]
     )

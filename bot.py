@@ -130,7 +130,11 @@ def get_sauce():
 
 def get_extras():
     return choice(
-        [('Toasted Sesame Seeds', 10),
+        [('Croutons', 20),
+         ('Flax Seeds', 20),
+         ('Sesame Seeds', 20),
+         ('Gherkins', 30),
+         ('Capers', 30),
          ('Jalapenos', 30),
          ('Walnuts', 40),
          ('Pinenuts', 50)]
@@ -140,7 +144,9 @@ def get_extras():
 def get_non_filling():
     return choice(
         [('Houmous', 50),
-         ('Onion bhaji', 60)]
+         ('Onion Bhaji', 75)]
+         ('Veg Samosa', 75)]
+         ('Meat Samosa', 80)]
     )
 
 

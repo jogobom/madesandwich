@@ -144,8 +144,8 @@ def get_extras():
 def get_non_filling():
     return choice(
         [('Houmous', 50),
-         ('Onion Bhaji', 75)]
-         ('Veg Samosa', 75)]
+         ('Onion Bhaji', 75),
+         ('Veg Samosa', 75),
          ('Meat Samosa', 80)]
     )
 
